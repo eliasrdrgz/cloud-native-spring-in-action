@@ -80,7 +80,7 @@ class OrderServiceApplicationTests {
 	}
 
 	private static String r2dbcUrl() {
-		return String.format("r2dbc:postgresql://%s:%s/%s", postgresql.getHost(),
+		return "r2dbc:postgresql://%s:%s/%s".formatted(postgresql.getHost(),
 				postgresql.getMappedPort(PostgreSQLContainer.POSTGRESQL_PORT), postgresql.getDatabaseName());
 	}
 
