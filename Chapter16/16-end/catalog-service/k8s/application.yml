@@ -1,6 +1,9 @@
 polar:
   greeting: Welcome to the book catalog from a development Kubernetes environment!
 spring:
+  threads:
+    virtual:
+      enabled: true
   datasource:
     url: jdbc:postgresql://polar-postgres/polardb_catalog
   security:

@@ -9,6 +9,10 @@ server:
       min-spare: 5
 
 spring:
+  threads:
+    virtual:
+      enabled: true
+
   application:
     name: catalog-service
   lifecycle:
